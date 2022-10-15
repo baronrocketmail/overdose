@@ -51,7 +51,8 @@ export default function NavTabs() {
             {console.log(value)}
 
         <Box className={"nav"} sx={{ width: '100%' }}>
-            <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
+            <Tabs value={value}  variant="scrollable"
+  scrollButtons="auto" onChange={handleChange} aria-label="nav tabs example">
                 {tabElements}
             </Tabs>
         </Box>
